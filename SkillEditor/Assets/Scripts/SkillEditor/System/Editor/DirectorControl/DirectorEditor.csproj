@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>e26f2110-c843-433e-a83c-bcc815af23b7</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>DirectorEditor</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="UnityEngine" />
+    <Reference Include="System" />
+    <Reference Include="UnityEditor" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="CinemaCurveSelection.cs" />
+    <Compile Include="CinemaAnimationCurveWrapper.cs" />
+    <Compile Include="CinemaKeyframeWrapper.cs" />
+    <Compile Include="CinemaMemberCurveWrapper.cs" />
+    <Compile Include="CutsceneItemControlAttribute.cs" />
+    <Compile Include="CutsceneTrackAttribute.cs" />
+    <Compile Include="CutsceneTrackGroupAttribute.cs" />
+    <Compile Include="DirectorControlHelper.cs" />
+    <Compile Include="DirectorControlSettings.cs" />
+    <Compile Include="DirectorControlState.cs" />
+    <Compile Include="DirectorCopyPaste.cs" />
+    <Compile Include="MinMaxSliderControl.cs" />
+    <Compile Include="TickHandler.cs" />
+    <Compile Include="TimeArea.cs" />
+    <Compile Include="UnitySceneEvaluator.cs" />
+    <Compile Include="ZoomableArea.cs" />
+    <Compile Include="CutsceneEventHandler.cs" />
+    <Compile Include="DirectorDragHandler.cs" />
+    <Compile Include="CinemaDirectorArgs.cs" />
+    <Compile Include="CinemaDirectorDragArgs.cs" />
+    <Compile Include="DirectorControl.cs" />
+    <Compile Include="CinemaCurveTrackControl.cs" />
+    <Compile Include="TrackControlHandler.cs" />
+    <Compile Include="TrackControlEventArgs.cs" />
+    <Compile Include="TimelineTrackControl.cs" />
+    <Compile Include="TrackGroupControl.cs" />
+    <Compile Include="ActionItemEventHandler.cs" />
+    <Compile Include="ActionItemEventArgs.cs" />
+    <Compile Include="ActionItemControl.cs" />
+    <Compile Include="ActionFixedItemEventHandler.cs" />
+    <Compile Include="ActionFixedItemEventArgs.cs" />
+    <Compile Include="ActionFixedItemControl.cs" />
+    <Compile Include="CinemaTweenItemControl.cs" />
+    <Compile Include="CurveClipItemEventHandler.cs" />
+    <Compile Include="CurveClipSrubberEventHandler.cs" />
+    <Compile Include="CurveClipWrapperEventHandler.cs" />
+    <Compile Include="CurveClipItemEventArgs.cs" />
+    <Compile Include="CurveClipScrubberEventArgs.cs" />
+    <Compile Include="CurveClipWrapperEventArgs.cs" />
+    <Compile Include="CinemaCurveClipItemControl.cs" />
+    <Compile Include="TrackItemEventHandler.cs" />
+    <Compile Include="TranslateTrackItemEventHandler.cs" />
+    <Compile Include="TrackItemEventArgs.cs" />
+    <Compile Include="TrackItemControl.cs" />
+    <Compile Include="CinemaActionWrapper.cs" />
+    <Compile Include="CinemaActionFixedWrapper.cs" />
+    <Compile Include="CinemaTweenWrapper.cs" />
+    <Compile Include="CinemaClipCurveWrapper.cs" />
+    <Compile Include="CutsceneWrapper.cs" />
+    <Compile Include="TimelineItemWrapper.cs" />
+    <Compile Include="TimelineTrackWrapper.cs" />
+    <Compile Include="TrackGroupWrapper.cs" />
+    <Compile Include="UnityBehaviourWrapper.cs" />
+    <Compile Include="DirectorEditor\ResizeOption.cs" />
+    <Compile Include="DirectorEditor\DirectorBehaviourControlHandler.cs" />
+    <Compile Include="DirectorEditor\DirectorBehaviourControlEventArgs.cs" />
+    <Compile Include="DirectorEditor\DirectorBehaviourControl.cs" />
+    <Compile Include="DirectorEditor\SidebarControlHandler.cs" />
+    <Compile Include="DirectorEditor\SidebarControlEventArgs.cs" />
+    <Compile Include="DirectorEditor\SidebarControl.cs" />
+  </ItemGroup>
+</Project>

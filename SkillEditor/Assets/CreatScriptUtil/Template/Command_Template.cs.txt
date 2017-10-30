@@ -1,0 +1,13 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System;
+using Virivers;
+
+public class #SCRIPTNAME# : ICommand
+{
+    public override void Execute(string command, Dictionary<string, System.Object> value)
+    {
+        #EXECUTECODE#
+    }
+}

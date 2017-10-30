@@ -1,0 +1,36 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class #SCRIPTNAME# : IMediator {
+
+	public override void Execute(string command, object value)
+    {
+        
+    }
+
+    public override string[] GetListNotifications()
+    {
+        
+    }
+
+    public override string GetMediatorName()
+    {
+       
+    }
+
+    public override void RemoveMediator()
+    {
+        
+    }
+
+    protected override ABLoaderStruct[] getLoaderABNames()
+    {
+        
+    }
+
+    protected override void InputEvent()
+    {
+         
+    }
+}
