@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E58A845-071C-BED2-DF21-EFE00BF2ADE5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>5.6.2f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_2;UNITY_5_6;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_2;UNITY_5_6;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="SkillEditor.csproj">
+      <Project>{E9E7C965-AB3D-0F3F-83DF-9CE02503F39A}</Project>
+      <Name>SkillEditor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\SkillEditor\Custom\Editor\Inspector\AutoSkillParticleEmitterItemInspector.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Custom\Editor\Inspector\CameraEffetActionItemInspector.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Custom\Editor\Inspector\ManualSkillParticleEmitterItemInspector.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Custom\Editor\Inspector\PlayModelActionItemInspector.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Custom\Editor\Inspector\SkillParticleActionItemInspector.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Editor\SkillEditor.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Editor\SkillExportHelper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Editor\Wizard\CreateAddBuffWizard.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Editor\Wizard\CreateSkillActionWizard.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Editor\Wizard\CreateSkillEffectWizard.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Editor\Wizard\CreateSkillHitWizard.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Editor\Wizard\CreateSkillLimitWizard.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Editor\Wizard\CreateSkillParticleEmitterWizard.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Editor\Wizard\CreateSkillParticleWizard.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\Editor\Wizard\CreateSkillWizard.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackControls\ActorCurveTrackControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackControls\ActorItemTrackControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackControls\GenericTrackControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackControls\GlobalItemTrackControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackControls\SkillTrackControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackGroupControls\ActorTrackGroupControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackGroupControls\GenericTrackGroupControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackItemControls\CinemaActionControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackItemControls\CinemaActorActionControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackItemControls\CinemaActorCurveControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackItemControls\CinemaCurveControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackItemControls\CinemaGlobalActionControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackItemControls\CinemaItemControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackItemControls\SkillParticleActionControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Controls\TrackItemControls\SkillParticleEmitterControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\ActionFixedItemControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\ActionFixedItemEventArgs.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\ActionFixedItemEventHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\ActionItemControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\ActionItemEventArgs.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\ActionItemEventHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\AssemblyInfo.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaActionFixedWrapper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaActionWrapper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaAnimationCurveWrapper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaClipCurveWrapper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaCurveClipItemControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaCurveSelection.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaCurveTrackControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaDirectorArgs.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaDirectorDragArgs.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaKeyframeWrapper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaMemberCurveWrapper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaTweenItemControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CinemaTweenWrapper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CurveClipItemEventArgs.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CurveClipItemEventHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CurveClipScrubberEventArgs.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CurveClipSrubberEventHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CurveClipWrapperEventArgs.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CurveClipWrapperEventHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CutsceneEventHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CutsceneItemControlAttribute.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CutsceneTrackAttribute.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CutsceneTrackGroupAttribute.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\CutsceneWrapper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorControlHelper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorControlSettings.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorControlState.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorCopyPaste.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorDragHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorEditor\DirectorBehaviourControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorEditor\DirectorBehaviourControlEventArgs.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorEditor\DirectorBehaviourControlHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorEditor\ResizeOption.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorEditor\SidebarControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorEditor\SidebarControlEventArgs.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\DirectorEditor\SidebarControlHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\Global.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\MinMaxSliderControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\MultilineTrackControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TickHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TimeArea.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TimelineItemWrapper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TimelineTrackControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TimelineTrackWrapper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TrackControlEventArgs.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TrackControlHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TrackGroupControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TrackGroupWrapper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TrackItemControl.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TrackItemEventArgs.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TrackItemEventHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\TranslateTrackItemEventHandler.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\UnityBehaviourWrapper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\UnitySceneEvaluator.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\DirectorControl\ZoomableArea.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Inspector\CameraEffectInspector.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\TimelineWindow.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Utility\CutsceneControlHelper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Utility\CutsceneItemFactory.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Utility\DirectorHelper.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Utility\HandlesUtility.cs" />
+    <Compile Include="Assets\Scripts\SkillEditor\System\Editor\Utility\MecanimAnimationUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Anomaly.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Binary.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_BlackHole.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Computer.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Distortion.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Dust.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Fog_Smoke.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Ghost.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Inverse.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Matrix.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Mirror.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Myst.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Scan_Scene.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Shield.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_3D_Snow.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_AAA_Blood.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_AAA_BloodOnScreen.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_AAA_Blood_Hit.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_AAA_Blood_Plus.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_AAA_SuperComputer.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_AAA_SuperHexagon.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_AAA_WaterDrop.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_AAA_WaterDropPro.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Alien_Vision.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Antialiasing_FXAA.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Atmosphere_Fog.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Atmosphere_Rain.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Atmosphere_Rain_Pro.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Atmosphere_Rain_Pro_3D.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Atmosphere_Snow_8bits.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Blend.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_BlueScreen.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Color.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_ColorBurn.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_ColorDodge.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_ColorKey.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Darken.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_DarkerColor.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Difference.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Divide.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Exclusion.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_GreenScreen.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_HardLight.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_HardMix.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Hue.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Lighten.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_LighterColor.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_LinearBurn.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_LinearDodge.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_LinearLight.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Luminosity.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Multiply.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Overlay.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_PinLight.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Saturation.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Screen.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_SoftLight.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_SplitScreen.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_SplitScreen3D.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Subtract.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_VividLight.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blizzard.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Bloom.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_BlurHole.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Blurry.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_DitherOffset.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Dithering2x2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Focus.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_GaussianBlur.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Movie.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Noise.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Radial.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Radial_Fast.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Regular.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Steam.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Tilt_Shift.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Tilt_Shift_Hole.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Tilt_Shift_V.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Broken_Screen.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Color_BrightContrastSaturation.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Color_Chromatic_Aberration.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Color_Chromatic_Plus.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Color_Contrast.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Color_GrayScale.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Color_Invert.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Color_Noise.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Color_RGB.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Color_Sepia.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Color_Switching.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Color_YUV.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Colors_Adjust_ColorRGB.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Colors_Adjust_FullColors.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Colors_Adjust_PreFilters.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Colors_BleachBypass.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Colors_Brightness.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Colors_DarkColor.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Colors_HSV.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Colors_HUE_Rotate.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Colors_NewPosterize.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Colors_RgbClamp.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Colors_Threshold.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Convert_Normal.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Aspiration.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_BigFace.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_BlackHole.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Dissipation.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Dream.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Dream2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_FishEye.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Flag.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Flush.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Half_Sphere.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Heat.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Lens.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Noise.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_ShockWave.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_ShockWaveManual.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Twist.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Twist_Square.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Water_Drop.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Wave_Horizontal.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_BluePrint.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_CellShading.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_CellShading2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Comics.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Crosshatch.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Curve.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_EnhancedComics.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Halftone.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Laplacian.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Lines.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga3.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga4.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga5.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga_Color.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga_Flash.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga_FlashWhite.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga_Flash_Color.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_NewCellShading.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Paper.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Paper2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Paper3.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Toon.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_EXTRA_Rotation.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_EXTRA_SHOWFPS.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Edge_BlackLine.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Edge_Edge_filter.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Edge_Golden.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Edge_Neon.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Edge_Sigmoid.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Edge_Sobel.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_EyesVision_1.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_EyesVision_2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_8bits.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_8bits_gb.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Ascii.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_DarkMatter.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_DigitalMatrix.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_DigitalMatrixDistortion.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Dot_Circle.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Drunk.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Drunk2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_EarthQuake.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Funk.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Glitch1.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Glitch2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Glitch3.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Grid.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Hexagon.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Hexagon_Black.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Hypno.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_InverChromiLum.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Mirror.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Plasma.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Psycho.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Scan.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Screens.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Spot.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_ZebraColor.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_superDot.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Film_ColorPerfection.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Film_Grain.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Fly_Vision.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Glasses_On.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Glasses_OnX.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Glitch_Mozaic.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Glow_Glow.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Glow_Glow_Color.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Gradients_Ansi.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Gradients_Desert.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Gradients_ElectricGradient.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Gradients_FireGradient.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Gradients_Hue.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Gradients_NeonGradient.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Gradients_Rainbow.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Gradients_Stripe.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Gradients_Tech.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Gradients_Therma.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Light_Rainbow.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Light_Rainbow2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Light_Water.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Light_Water2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Lut_PlayWith.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Lut_Plus.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Lut_Simple.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Lut_TestMode.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_NightVisionFX.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_NightVision_4.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Noise_TV.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Noise_TV_2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Noise_TV_3.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Oculus_NightVision1.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Oculus_NightVision2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Oculus_NightVision3.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Oculus_NightVision5.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Oculus_ThermaVision.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_OldFilm_Cutting1.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_OldFilm_Cutting2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Pixel_Pixelisation.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Pixelisation_DeepOilPaintHQ.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Pixelisation_Dot.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Pixelisation_OilPaint.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Pixelisation_OilPaintHQ.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Pixelisation_Sweater.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_RainFX.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Real_VHS.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Retro_Loading.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Sharpen_Sharpen.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Special_Bubble.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_50.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_80.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_ARCADE.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_ARCADE_2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_ARCADE_Fast.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Artefact.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_BrokenGlass.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_BrokenGlass2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Chromatical.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Chromatical2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_CompressionFX.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Distorted.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Horror.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_LED.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_MovieNoise.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Noise.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Old.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Old_Movie.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Old_Movie_2.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_PlanetMars.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Posterize.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Rgb.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Tiles.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_VHS.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_VHS_Rewind.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Vcr.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Video3D.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Videoflip.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Vignetting.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_Vintage.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_WideScreenCircle.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_WideScreenHV.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_WideScreenHorizontal.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_WideScreenVertical.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_VHS_Tracking.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_Aura.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_AuraDistortion.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_Blood.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_Blood_Fast.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_Crystal.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_Drost.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_Hell_Blood.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_Plasma.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_Psycho.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_Rainbow.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_SniperScore.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_Tunnel.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_Warp.shader" />
+    <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Vision_Warp2.shader" />
+    <None Include="Assets\CreatScriptUtil\Template\Action_Template.cs.txt" />
+    <None Include="Assets\CreatScriptUtil\Template\Command_Template.cs.txt" />
+    <None Include="Assets\CreatScriptUtil\Template\Mediator_Template.cs.txt" />
+    <None Include="Assets\CreatScriptUtil\Template\View_Template.cs.txt" />
+    <None Include="Assets\Shader\Charactor\PF-Unlit-AlphaTest.shader" />
+    <None Include="Assets\Shader\Charactor\S_MatCapPlayer_UnLit_Double.shader" />
+    <None Include="Assets\Shader\LKshader\Merged\Tex2Add.shader" />
+    <None Include="Assets\Shader\LKshader\Tex1.shader" />
+    <None Include="Assets\Shader\LKshader\Tex2Detail2.shader" />
+    <None Include="Assets\Shader\LKshader\Tex2Distort1.shader" />
+    <None Include="Assets\Shader\LKshader\Tex2Distort2.shader" />
+    <None Include="Assets\Shader\LKshader\Tex2Mask1.shader" />
+    <None Include="Assets\Shader\LKshader\Tex2Mask2.shader" />
+    <None Include="Assets\Shader\niuqu_Distortion.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
