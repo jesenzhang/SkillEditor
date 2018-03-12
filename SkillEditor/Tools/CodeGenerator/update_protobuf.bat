@@ -1,2 +1,0 @@
-CodeGenerator.exe E:\dev\MmoCard\src\message\proto\src\Math.proto E:\dev\MmoCard\src\message\proto\src\MapEvent.proto  E:\dev\MmoCard\src\message\proto\src\StringID.proto E:\dev\MmoCard\src\message\proto\src\Skill.proto E:\dev\MmoCard\src\message\proto\src\SkillUnit.proto E:\dev\MmoCard\src\message\proto\src\EffectConfig.proto --fix-nameclash --output ../CSharpSource/Message.cs
-pause
